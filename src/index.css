@@ -1,11 +1,36 @@
+@font-face {
+  font-family: 'Vazir';
+  src:
+    local('Vazir'),
+    url('./assets/fonts/fa-vazir/Vazir.ttf') format('truetype');
+}
+
+@font-face {
+  font-family: 'Vazir Medium';
+  src:
+    local('Vazir Medium'),
+    local('Vazir-Medium'),
+    url('./assets/fonts/fa-vazir/Vazir-Medium.ttf') format('truetype');
+}
+
+@font-face {
+  font-family: 'Vazir Bold';
+  src:
+    local('Vazir Bold'),
+    local('Vazir-Bold'),
+    url('./assets/fonts/fa-vazir/Vazir-Bold.ttf') format('truetype');
+}
+
 html, body {
+  box-sizing: border-box;
   width: 100%;
   height: 100%;
+  background: #000;
 }
 
 body {
   margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
+  font-family: 'Vazir', -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
     'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
     sans-serif;
   -webkit-font-smoothing: antialiased;

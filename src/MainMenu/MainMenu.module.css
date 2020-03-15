@@ -1,0 +1,9 @@
+.NormalMainMenu {
+  top: 0;
+  width: 75vw;
+  margin: 0 auto auto auto;
+}
+
+.ClickedMainMenu{
+  width: 45vw;
+}

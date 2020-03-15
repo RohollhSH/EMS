@@ -1,0 +1,30 @@
+.Banner {
+}
+
+.Banner p {
+  margin: 4px 0;
+}
+
+.BannerImage {
+  position: relative;
+  width: 100vw;
+  top: 0;
+  left: 0;
+  border-bottom: 1px solid #fff;
+}
+
+.BannerTitle{
+  position: absolute;
+
+  margin-top: 1.5vh;
+
+  top: 0;
+  left: 50%;
+  transform: translate(-50%, 0);
+
+  font-size: .7em;
+  color: #fff;
+  font-family: 'Vazir Bold';
+
+  min-width: 200px;
+}
