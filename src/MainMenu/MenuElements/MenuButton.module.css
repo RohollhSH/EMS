@@ -6,25 +6,23 @@
   width: 100%;
   display: flex;
   flex-direction: row;
-  justify-content: space-between;
   color: #857D7D;
+  position: relative;
 }
 
 .TextButton_clicked {
-  font-size: 15px;
+  font-size: 12px;
   width: 100%;
   display: flex;
   flex-direction: row;
-  justify-content: space-between;
   color: #c2baba;
 }
 
 .TextButton_a_click{
-  font-size: 11px;
+  font-size: 9px;
   width: 100%;
   display: flex;
   flex-direction: row;
-  justify-content: space-between;
   color: #414141;
 }
 
@@ -40,7 +38,9 @@
   margin: auto;
 }
 
-
+.MainMenuLine:last-child{
+  display: none;
+}
 
 .ArrowRight_a_click {
   width: 0;
@@ -64,8 +64,9 @@
 
   border-left: 6px solid #857D7D;
 
-  position: relative;
-  margin: auto 10px;
+  position: absolute;
+  margin: 15px;
+  right: 0;
 }
 
 .ArrowLeft {
@@ -75,7 +76,7 @@
   border-top: 3px solid transparent;
   border-bottom: 3px solid transparent;
 
-  border-right:6px solid #857D7D;
+  border-right:6px solid #c2baba;
 
   position: relative;
   margin: auto 10px;

@@ -9,11 +9,16 @@ const MenuButton = props => {
 
   if (props.menuState) {
     //after menu is clicked
-    if (props.activated) {
+    if (props.activated ) {
       //the clicked button
       arrowStyle = classes.ArrowLeft;
       textButtonStyle = classes.TextButton_clicked;
-    } else {
+    }else if(props.hasParent !== undefined){
+      arrowStyle = {
+        display:'none'
+      };
+      textButtonStyle = classes.TextButton_clicked;
+    }else {
       // non clicked buttons
       arrowStyle = classes.ArrowRight_a_click;
       textButtonStyle = classes.TextButton_a_click;
@@ -26,10 +31,14 @@ const MenuButton = props => {
   return (
     <Auxx>
       <div className={textButtonStyle} onClick={props.click}>
-        <p className={classes.TheText}>
+        {<p
+          className={classes.TheText}
+          style={props.hasParent !== undefined ? {fontSize: '9px', fontWeight: 'Vazir Medium'}
+            : null}
+        >
           {props.children}
-        </p>
-        <div className={arrowStyle}/>
+        </p>}
+        <div className={arrowStyle} style={!props.hasChild ? {opacity: '0'} : null}/>
       </div>
       <div className={classes.MainMenuLine}/>
     </Auxx>

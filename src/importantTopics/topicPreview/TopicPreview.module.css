@@ -1,0 +1,32 @@
+.BoxesContainer {
+  min-width: 100%;
+  display: flex;
+  overflow-x: auto;
+}
+
+.BoxesContainer::-webkit-scrollbar {
+  height: 2px;
+}
+
+/* Track */
+.BoxesContainer::-webkit-scrollbar-track {
+  background: #c10600;
+}
+
+/* Handle */
+.BoxesContainer::-webkit-scrollbar-thumb {
+  background: #3a0600;
+}
+
+/* Handle on hover */
+.BoxesContainer::-webkit-scrollbar-thumb:hover {
+  background: #ee0025;
+}
+
+.MainBox {
+  border: 1px solid #707070;
+  min-width: 110px;
+  height: 140px;
+  border-radius: 12px;
+  margin: 10px 0 10px 15px;
+}

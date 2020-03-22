@@ -1,9 +1,15 @@
 .NormalMainMenu {
-  top: 0;
   width: 75vw;
-  margin: 0 auto auto auto;
+  margin: auto;
 }
 
-.ClickedMainMenu{
-  width: 45vw;
+.ClickedMainMenu {
+  width: 37vw;
+  margin-left: 3vw;
+  margin-right: 3vw;
+}
+
+.VerLine {
+  border-left: 1px solid #857D7D;
+  height: 100%;
 }
